@@ -18,3 +18,20 @@ def s_8393():
     for i in range(1, n+1):
         sum_num += i
     print(sum_num)
+
+def s_25304():
+    total_cost = int(input())
+    prev_cost = 0
+    n = int(input())
+    for i in range(1, n + 1):
+        cost, cnt = map(int, input().split())
+        prev_cost += cost * cnt
+    if total_cost == prev_cost:
+        print('Yes')
+    else:
+        print('No')
+
+def s_25314():
+    n = int(input())
+    cnt = n // 4
+    print('long ' * cnt + 'int')
